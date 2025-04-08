@@ -38,6 +38,7 @@ export function normalizarTransacao(transacao: TransacaoAPI) {
         nome: transacao.Nome,
         id: transacao.ID,
         data: stringToDate(transacao.Data),
+        dataNomral: transacao.Data,
         status: transacao.Status,
         email: transacao.Email,
         moeda: transacao["Valor (R$)"],
